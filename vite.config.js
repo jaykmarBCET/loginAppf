@@ -9,7 +9,7 @@ export default defineConfig({
     port:5173,
     proxy: {
       '/api/v1/users': {
-        target: 'http://localhost:8000',
+        target: 'https://loginappb.onrender.com',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api\/v1\/users/, '/api/v1/users'),
       }
