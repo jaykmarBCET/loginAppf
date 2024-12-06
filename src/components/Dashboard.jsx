@@ -1,9 +1,9 @@
 import Todo from './Todo'
 import { AppContext } from '../context/AppProvider'
-// import { Navigate } from 'react-router-dom'
+
 import { useContext } from 'react'
 import { logout } from '../api/user.routes'
-import Whiteboard from './WhiteBoard'
+import Whiteboard from './Whiteboard'
 
 function Dashboard() {
     const { user } = useContext(AppContext)
