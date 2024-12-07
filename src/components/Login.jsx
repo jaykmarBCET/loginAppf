@@ -78,7 +78,7 @@ const Login = () => {
             ) : (
                 <div className='register-card flex flex-col mx-auto justify-center items-center'>
                     {Loader && <Loading />}
-                    <h1 className='register-heading font-semibold text-center text-2xl py-4'>Login</h1>
+                    <h1 className='register-heading font-semibold text-center text-2xl py-4'>Loginb</h1>
                     {error && <p className="text-red-500">{error}</p>} {/* Display error message */}
                     <form className='p-4 flex flex-col justify-center items-center gap-2' onSubmit={handleSubmit}>
                         <div>
