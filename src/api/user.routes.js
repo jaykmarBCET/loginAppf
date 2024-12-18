@@ -13,7 +13,7 @@ export const register = async (data) => {
 export const login =  async (data) => {
   
     try {
-        const  response = await axios.post('https://loginappb.onrender.com/api/v1/users/login', data,{
+        const  response = await axios.post('https://7m9dlz-8000.csb.app/api/v1/users/login', data,{
           headers: {
             'Content-Type': 'application/json',
           }
@@ -30,7 +30,7 @@ export const login =  async (data) => {
 
 export const isValidUserName = async(data) =>{
   try{
-    const response = await axios.post('https://loginappb.onrender.com/api/v1/users/isvalid-username', data,{
+    const response = await axios.post('https://7m9dlz-8000.csb.app/api/v1/users/isvalid-username', data,{
       headers:{
         'Content-Type': 'application/json',
       }
@@ -44,7 +44,7 @@ export const isValidUserName = async(data) =>{
 
 export const currentUser = async()=>{
   try {
-    const response = await axios.get('https://loginappb.onrender.com/api/v1/users/current-user', {
+    const response = await axios.get('https://7m9dlz-8000.csb.app/api/v1/users/current-user', {
       withCredentials: true, // This is crucial for sending cookies with the request
     });
     return response?.data
@@ -56,7 +56,7 @@ export const currentUser = async()=>{
 
 export const logout = async()=>{
   try {
-    const response = await axios.post('https://loginappb.onrender.com/api/v1/users/logout',{
+    const response = await axios.post('https://7m9dlz-8000.csb.app/api/v1/users/logout',{
       withCredentials:true
     })
     return  response.data;
@@ -69,7 +69,7 @@ export const logout = async()=>{
 
 export const refreshToken  = async()=>{
   try {
-    const response = await axios.get('https://loginappb.onrender.com/api/v1/users/refresh-token',{
+    const response = await axios.get('https://7m9dlz-8000.csb.app/api/v1/users/refresh-token',{
       withCredentials:true
     })
     return response.data;
@@ -81,7 +81,7 @@ export const refreshToken  = async()=>{
 }
 
 export const changeName = async(data)=>{
-  const response = await axios.patch("https://loginappb.onrender.com/api/v1/users/change-name",data,{
+  const response = await axios.patch("https://7m9dlz-8000.csb.app/api/v1/users/change-name",data,{
     withCredentials:true
   })
   return response.data;
@@ -104,7 +104,7 @@ export const changeCoverImage = async ( data)=>{
 
 export const getTodoList = async ()=>{
   try {
-    const response = await axios.get('https://loginappb.onrender.com/api/v1/users/dashboard/get-list',{
+    const response = await axios.get('https://7m9dlz-8000.csb.app/api/v1/users/dashboard/get-list',{
       withCredentials:true
     });
     return response.data;
@@ -116,7 +116,7 @@ export const getTodoList = async ()=>{
 
 export const updateTodo = async (data)=>{
   try {
-    const response = await axios.patch('https://loginappb.onrender.com/api/v1/users/dashboard/update-list',data,{
+    const response = await axios.patch('https://7m9dlz-8000.csb.app/api/v1/users/dashboard/update-list',data,{
       withCredentials:true
     });
     return response.data;
